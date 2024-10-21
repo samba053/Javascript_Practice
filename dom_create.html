@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+        var x=document.createElement('p')
+        x.innerHTML="<div>paragraph 3</div>";
+        console.log(x)
+        var parent=document.getElementById("second");
+        console.log(parent)
+
+        parent.appendChild(x)
+       console.log(parent.innerText)
+        console.log(parent.innerHTML)
+        });
+        
+       
+    </script>
+</head>
+<body>
+    <div id="first">
+        <p>paragraph 1</p>
+        <p>paragraph 2</p>
+    </div>
+    <div id="second">
+        <p>paragraph 1</p>
+        <p>paragraph 2</p>
+    </div>
+    
+</body>
+</html>

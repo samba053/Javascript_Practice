@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+        var x=document.createElement('p')
+        x.innerHTML="<div>paragraph special</div>";
+        
+        var parent=document.getElementById("second");
+        var n=document.getElementById("last")
+
+        
+
+        parent.insertBefore(x,last)
+       
+        });
+        
+       
+    </script>
+</head>
+<body>
+    <div id="first">
+        <p>paragraph 1</p>
+        <p>paragraph 2</p>
+    </div>
+    <div id="second">
+        <p>paragraph 1</p>
+        <p id="last">paragraph 2</p>
+    </div>
+    
+</body>
+</html>

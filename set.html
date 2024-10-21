@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let s1 = new Set()
+        s1.add(10);
+        s1.add(20);
+        s1.add(40);
+        s1.add(70);
+        s1.add(24);
+        console.log((s1))
+
+        a1=[50,40,30,20,10]
+       
+        let s2 = new Set(a1)
+        console.log(s2)
+
+        b="hyd"
+
+        let s3=new Set(b)
+        
+       s3.forEach(function(ele,index){
+        console.log(ele);
+        console.log(index);
+
+       })
+        console.log(s3);
+        s3.delete('d')
+        console.log(s3);
+        let status = s3.has('h')
+        console.log(status);
+
+        console.log(s2.size);
+        s2.clear()
+        console.log(s2);
+
+        s5=[10,20,40,50]
+
+        let s5=entries()
+        console.log(s5.index);
+    </script>
+    
+</body>
+</html>

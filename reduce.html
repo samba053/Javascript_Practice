@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a =[2,3,9]
+        /* var max=a.reduce(function(acc,ele,index,arr){
+            if(acc>ele){
+                return acc
+            }
+            else{
+                return ele
+            }
+
+         },a[0])
+         console.log(max)*/
+         var max = a.reduce(function(acc,ele){
+            return acc+ele
+
+         },a[0])
+         console.log(max)
+    </script>
+    
+</body>
+</html>
